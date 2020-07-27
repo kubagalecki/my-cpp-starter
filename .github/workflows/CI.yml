@@ -22,7 +22,7 @@ jobs:
 
     - name: what is happening
       run: |
-          ls -alR
+          pwd
           echo $GITHUB_WORKSPACE
           ls -alR $GITHUB_WORKSPACE
 

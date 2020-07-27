@@ -1,4 +1,4 @@
-[![Continuous Integration](https://github.com/kubagalecki/my-cpp-starter/workflows/Continuous%20Integration/badge.svg)](https://github.com/kubagalecki/my-cpp-starter/actions)
+[![tests](https://github.com/kubagalecki/my-cpp-starter/workflows/tests/badge.svg)](https://github.com/kubagalecki/my-cpp-starter/actions)
 [![codecov](https://codecov.io/gh/kubagalecki/my-cpp-starter/branch/master/graph/badge.svg)](https://codecov.io/gh/kubagalecki/my-cpp-starter)
 
 # my-cpp-starter

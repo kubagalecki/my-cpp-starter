@@ -17,9 +17,11 @@ To get started with this template make sure you have the following:
 - GitHub account (obviously)
 - Docker Hub account
 - Codecov account integrated with GitHub
+
 Next, use this repository as a template, and define the following GitHub secrets (Settings -> Secrets):
 - DOCKER_HUB_USERNAME your username on Docker Hub
 - DOCKER_HUB_PASSWORD authentification token for DockerHub
 - DOCKER_HUB_IMAGE    name of Docker image used for caching build dependencies
 - CODECOV_TOKEN       codecov authentification token
+
 Now add your newly created repository to Codecov, and that's it! Push your first commit and watch the CI do its thing. If you need to any additional dependencies, simply edit tests/ci/Dockerfile.base. Each time you do, the base Docker image is rebuilt and cached on you Docker Hub account. Note that since your Docker Hub info is kept as repository secrets, your docker persona remains hidden.

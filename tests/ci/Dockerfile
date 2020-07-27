@@ -1,7 +1,5 @@
 COPY ./ ci/
 
-RUN ls -al
+RUN chmod +x ci/tests/ci/entrypoint.sh
 
-RUN chmod +x tests/ci/entrypoint.sh
-
-ENTRYPOINT ["sh", "tests/ci/entrypoint.sh"]
+ENTRYPOINT ["sh", "ci/tests/ci/entrypoint.sh"]

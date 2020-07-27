@@ -12,7 +12,7 @@ jobs:
         username: "${{ secrets.DOCKER_HUB_USERNAME }}"
         password: "${{ secrets.DOCKER_HUB_PASSWORD }}"
         image_name: "${{ secrets.DOCKER_HUB_IMAGE }}" 
-        dockerfile: "$GITHUB_WORKSPACE/tests/ci/Dockerfile.base"
+        dockerfile: tests/ci/Dockerfile.base
 
     - name: append docker base
       env:

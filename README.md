@@ -3,6 +3,7 @@
 
 # my-cpp-starter
 Starter template for header-only C++ libraries. Currently still under construction.
+
 Note: the tests should be failing, and code coverage should be <100%
 
 ### Current features
@@ -24,4 +25,8 @@ Next, use this repository as a template, and define the following GitHub secrets
 - DOCKER_HUB_IMAGE    name of Docker image used for caching build dependencies
 - CODECOV_TOKEN       codecov authentification token
 
-Now add your newly created repository to Codecov, and that's it! Push your first commit and watch the CI do its thing. If you need to any additional dependencies, simply edit tests/ci/Dockerfile.base. Each time you do, the base Docker image is rebuilt and cached on you Docker Hub account. Note that since your Docker Hub info is kept as repository secrets, your docker persona remains hidden.
+Now add your newly created repository to Codecov, and that's it!
+Push your first commit and watch the CI do its thing.
+If you need to any additional dependencies, simply edit tests/ci/Dockerfile.base.
+Each time you do, the base Docker image is rebuilt and cached on you Docker Hub account.
+Note that since your Docker Hub info is kept as repository secrets, your docker persona remains hidden.

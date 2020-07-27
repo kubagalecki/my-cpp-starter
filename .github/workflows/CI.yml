@@ -14,7 +14,7 @@ jobs:
         image_name: "${{ secrets.DOCKER_HUB_IMAGE }}" 
         dockerfile: tests/ci/Dockerfile.base
 
-    - name: append docker base
+    - name: Append docker base
       env:
         DOCKER_BASE: "${{ steps.docker-base-cache.outputs.FULL_IMAGE_NAME }}"
       run: |

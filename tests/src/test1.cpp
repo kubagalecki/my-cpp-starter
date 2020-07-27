@@ -6,4 +6,3 @@ TEST_CASE("A test that should pass", "[test]")
     MyHeader a;
     CHECK(a.getMember() == 42);
 }
-

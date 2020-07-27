@@ -1,7 +1,7 @@
-name: test
+name: Continuous Integration
 on: [push]
 jobs:
-  test:
+  CI:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2

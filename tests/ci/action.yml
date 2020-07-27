@@ -1,0 +1,6 @@
+name: tests
+description: build and run tests
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

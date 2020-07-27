@@ -20,6 +20,6 @@ jobs:
       run: |
           sed -i '1 i\FROM '"$DOCKER_BASE" $GITHUB_WORKSPACE/tests/ci/Dockerfile
 
-    - uses: "${GITHUB_WORKSPACE}"/tests/ci/
+    - uses: ./tests/ci/
       with:
         codecov_token: "${{ secrets.CODECOV_TOKEN }}"

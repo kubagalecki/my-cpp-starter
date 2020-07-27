@@ -1,6 +1,5 @@
-COPY ./ ci/
+COPY $GITHUB_WORKSPACE CI/
 
-RUN ls -al ci/
-RUN chmod +x ci/tests/ci/entrypoint.sh
+RUN chmod +x CI/tests/ci/entrypoint.sh
 
-ENTRYPOINT ["sh", "ci/tests/ci/entrypoint.sh"]
+ENTRYPOINT ["sh", "CI/tests/ci/entrypoint.sh"]

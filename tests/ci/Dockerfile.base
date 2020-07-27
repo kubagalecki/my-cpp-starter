@@ -1,6 +1,6 @@
 FROM    ubuntu:latest
 
-WORKDIR /usr/ci
+WORKDIR /usr/my-cpp-starter
 
 RUN     apt update
 RUN     DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata

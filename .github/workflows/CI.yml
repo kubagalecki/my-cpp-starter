@@ -18,7 +18,7 @@ jobs:
       env:
         DOCKER_BASE: "${{ steps.docker-base-cache.outputs.FULL_IMAGE_NAME }}"
       run: |
-          sed -i '1 i\FROM '"$DOCKER_BASE" $GITHUB_WORKSPACE/tests/ci/Dockerfile
+          sed -i '1 i\FROM '"$DOCKER_BASE" $GITHUB_WORKSPACE/Dockerfile
 
     - uses: ./tests/ci/
       with:

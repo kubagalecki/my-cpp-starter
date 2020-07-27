@@ -13,6 +13,10 @@ Note: the tests should be failing, and code coverage should be <100%
 - Pretty badges in the readme
 - A clang-format file (my personally preferred style, don't @ me)
 
+### Planned features
+- Static analysis
+- Doxygen
+
 ### Quickstart
 To get started with this template make sure you have the following:
 - GitHub account (obviously)

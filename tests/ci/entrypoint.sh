@@ -10,5 +10,5 @@ echo "Running tests..."
 $TEST_STATUS || echo "Tests failed. Delaying error until after code coverage is reported"
 echo "Generating code coverage report and uploading to Codecov..."
 gcovr -x -r .. -e ../tests -o report.xml
-curl -s https://codecov.io/bash | bash -s -- -c -f report.xml -v -t $INPUT_CODECOV_TOKEN
+curl -s https://codecov.io/bash | bash -s -- -c -f report.xml -t $INPUT_CODECOV_TOKEN
 $TEST_STATUS && echo "All tests passed. Good job! Finishing..." && exit 0 || echo "Some tests failed. I'm going to crash now. Goodbye." && exit 1

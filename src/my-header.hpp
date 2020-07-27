@@ -3,7 +3,7 @@
 struct MyHeader
 {
    int getMember() { return member; }
-   inline void untestedMemberFunction();
+   FORCE_DBG_GEN inline void untestedMemberFunction();
 
 private:
     static constexpr int computeMember() {     return 42;    }

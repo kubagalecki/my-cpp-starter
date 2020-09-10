@@ -12,7 +12,7 @@ jobs:
         username: "${{ secrets.DOCKER_HUB_USERNAME }}"
         password: "${{ secrets.DOCKER_HUB_PASSWORD }}"
         image_name: "${{ secrets.DOCKER_HUB_IMAGE }}" 
-        dockerfile: tests/ci/Dockerfile.base
+        dockerfile: scripts/ci/Dockerfile.base
 
     - name: Append docker base
       env:
@@ -20,6 +20,6 @@ jobs:
       run: |
           sed -i '1 i\FROM '"$DOCKER_BASE" $GITHUB_WORKSPACE/Dockerfile
 
-    - uses: ./tests/ci/
+    - uses: ./scripts/ci/github-action/
       with:
         codecov_token: "${{ secrets.CODECOV_TOKEN }}"

@@ -5,10 +5,10 @@ project(my_cpp_starter CXX)
 find_package(Catch2 REQUIRED)
 
 add_executable(test_target
-		tests/test-main.cpp
-		tests/test1.cpp
-		tests/test2.cpp
-        )
+    tests/test-main.cpp
+    tests/test1.cpp
+    tests/test2.cpp
+    )
 
 set_target_properties(test_target PROPERTIES
     CXX_STANDARD_REQUIRED ON

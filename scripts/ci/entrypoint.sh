@@ -3,10 +3,10 @@
 echo "Starting CI build..."
 mkdir build
 cd build
-cmake ../tests
-make -j4
+cmake -DCMAKE_BUILD_TYPE=Debug ..
+cmake --build .
 echo "Running tests..."
-./tests && TEST_STATUS=true || TEST_STATUS=false
+ctest && TEST_STATUS=true || TEST_STATUS=false
 $TEST_STATUS || echo "Tests failed. Delaying error until after code coverage is reported"
 echo "Generating code coverage report and uploading to Codecov..."
 gcovr -x -r .. -e ../tests -o report.xml

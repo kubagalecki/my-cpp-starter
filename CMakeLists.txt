@@ -8,16 +8,16 @@ add_executable(test_target
     tests/test-main.cpp
     tests/test1.cpp
     tests/test2.cpp
-    )
+)
 
 set_target_properties(test_target PROPERTIES
     CXX_STANDARD_REQUIRED ON
     CXX_STANDARD 17
-    )
+)
 
 target_include_directories(test_target PUBLIC
     "include/"
-    )
+)
 
 target_compile_options(test_target PUBLIC
     -Wall
@@ -27,12 +27,12 @@ target_compile_options(test_target PUBLIC
     -fprofile-arcs
     -ftest-coverage
     -fPIC
-    )
+)
 
 target_link_options(test_target PUBLIC
     -lgcov
     --coverage
-    )
+)
 
 target_link_libraries(test_target Catch2::Catch2)
 

@@ -1,3 +1,5 @@
+#include "utils/macros.h"
+
 #include <iostream>
 
 struct MyHeader

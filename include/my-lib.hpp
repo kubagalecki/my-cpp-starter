@@ -1,3 +1,2 @@
-#include "../src/macros.h"
-#include "../src/my-header.hpp"
+#include "my-module/my-header.hpp"
 
